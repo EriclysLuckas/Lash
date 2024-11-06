@@ -2,20 +2,10 @@ import styleHeader from "../HeaderLash/HeaderLash.module.css";
 import { IoMenu, IoCloseSharp } from "react-icons/io5";
 import { useState, useEffect } from "react";
 
+
 export default function HeaderLash() {
   const [isOpen, setIsOpen] = useState(false); 
   const [isMobile, setIsMobile] = useState(false);
-
-
-  
-
-
-
-
-
-
-
-
 
 
   const checkMobile = () => {
@@ -67,7 +57,7 @@ export default function HeaderLash() {
         </div>
         <div className={styleHeader.logoLash}>
           <figure>
-            <img src="../img/logo.png" alt="" />
+            <img src="../../../img/logo.png" alt="" />
           </figure>
         </div>
       </div>
