@@ -7,25 +7,7 @@ export default function HeaderLash() {
   const [isMobile, setIsMobile] = useState(false);
 
 
-  const [scrolled, setScrolled] = useState(false);
-
-
-
-  const handleScroll = () => {
-    if (window.scrollY > .1) {  
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  
 
 
 
@@ -72,7 +54,7 @@ export default function HeaderLash() {
 
   return (
     <section 
-      className={scrolled ? styleHeader.HeaderScrolled : styleHeader.HeaderLash} 
+      className={styleHeader.HeaderLash} 
     id="home">
       
       <div className={styleHeader.contentHeaderLash}>
