@@ -56,7 +56,7 @@ export default function HeaderLash() {
         </div>
         <div className={styleHeader.logoLash}>
           <figure>
-            <img src="../../../img/logo.png" alt="" />
+            <img src="https://raw.githubusercontent.com/EriclysLuckas/Lash/refs/heads/main/img/logo.png" alt="" />
           </figure>
         </div>
       </div>
