@@ -18,7 +18,7 @@ function App() {
     <CompareBackAfter />
     <GalleryLashs />
     <CareTips />
-    < FooterComponent/>
+    <FooterComponent/>
 
     </div>
   )
