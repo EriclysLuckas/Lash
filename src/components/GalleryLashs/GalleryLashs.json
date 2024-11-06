@@ -1,0 +1,46 @@
+
+
+[
+  {
+    "id": 1,
+    "name": "Russo",
+    "img" : "../img/ciliosBanner.jpg",
+    "min" : "../img/miniaturas/russia.png"
+
+  },
+  {
+    "id": 2,
+    "name": "Brasileiro",
+    "img" : "../img/Typelash.png",
+    "min" : "../img/miniaturas/brasil.png"
+  },
+  {
+    "id": 3,
+    "name": "Egípcio",
+    "img" : "../img/volumeEgipcios.jpg",
+    "min" : "../img/miniaturas/egito.png"
+
+  },
+  {
+    "id": 4,
+    "name": "Egípcio",
+    "img" : "../img/volumeEgipcios.jpg",
+    "min" : "../img/miniaturas/egito.png"
+
+  }, 
+   {
+    "id": 5,
+    "name": "Egípcio",
+    "img" : "../img/volumeEgipcios.jpg",
+    "min" : "../img/miniaturas/egito.png"
+
+  }, 
+   {
+    "id": 6,
+    "name": "Egípcio",
+    "img" : "../img/volumeEgipcios.jpg",
+    "min" : "../img/miniaturas/egito.png"
+
+  }
+
+]

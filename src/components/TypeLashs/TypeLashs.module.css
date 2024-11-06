@@ -1,0 +1,259 @@
+@media (width > 1600px) {
+  .SectionTypeLashs {
+    margin-top: 5%;
+   
+  }
+}
+
+
+@keyframes loopSpace {
+  
+  0%{
+  transform: translateX(0px) rotate(0deg) scale(100%);
+
+  }
+  
+  100%{
+    transform: translateX(10px) rotate(-80deg)  scale(120%);
+
+  }
+ 
+ }
+
+.SectionTypeLashs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 10ch;
+  h1 {
+    color: #5dd5c7;
+    font-size: 8ch;
+    padding-bottom: 6px;
+  }
+  &:before{
+    content: "";
+    background-image:url("../../../img/marcadagua2.png") ;
+    width:30ch;
+    background-size: contain;
+    height: 30ch;
+    left: 10%;
+    top: -30%;
+    position: absolute;
+    filter: blur(.4px) brightness(50%);
+    animation: loopSpace 40s linear infinite alternate-reverse ;
+
+  }
+
+  &:after{
+    position: absolute;
+    content: "";
+    background-image:url("../../../img/marcadagua2.png") ;
+    width:30ch;
+    height: 30;
+    right: 10%;
+    top: -10%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 1;
+    filter: blur(.4px) brightness(50%);
+    animation: loopSpace 40s linear infinite alternate-reverse ;
+  }
+}
+
+.TypeLash {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper {
+  width: 100%;
+  margin-top: 5%;
+      span{
+      background-color: #5dd5c7;
+     
+     
+  }
+}
+
+.figureSlider {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 120ch;
+  z-index: 1; 
+
+  img {
+    width: 55ch;
+    height: 55ch;
+    object-fit: cover;
+    object-position: 20%;
+    border-radius: 3ch;
+    position: relative;
+    border: 0.5ch solid #5dd5c7;
+    z-index: 2; 
+
+  }
+  &:after {
+    content: " ";
+    position: absolute;
+    width: 40%;
+    height: .5ch;
+    bottom: 20%;
+    border-bottom: dotted  #fff .5ch;
+    z-index: 3;
+
+  }
+  .imgBackground {
+    width: 55ch;
+    height: 55ch;
+    position: absolute;
+    z-index: 1; 
+    top: 25%;
+    right: 43%;
+    border: #fff solid 0.5ch;
+    filter: blur(1.5px) brightness(60%);
+  }
+}.slideBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #151d35; 
+  z-index: 1; 
+}
+
+.slideContent {
+  width: 50%;
+}
+.titleSlide {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 5%;
+  text-align: center;
+  font-size: 5ch;
+  padding-bottom: 6px;
+  position: relative;
+  z-index: 2; 
+
+ 
+}
+
+@media (width < 1400px) {
+  .SectionTypeLashs{
+    &:before{
+      display: none;
+    }
+  }
+  .figureSlider {
+    width: 100%;
+    height: 100ch;
+    img {
+      width: 50ch;
+      height: 50ch;
+    }
+    .imgBackground {
+      width: 50ch;
+      height: 50ch;
+      right: 40%;
+    }
+  }
+}
+
+@media (width < 900px) {
+
+  .figureSlider {
+    width: 100%;
+    height: 120ch;
+    img {
+      width: 60ch;
+      height: 60ch;
+    }
+    .imgBackground {
+      width: 60ch;
+      height: 60ch;
+      top: 25%;
+      right: 30%;
+    }
+  }
+}
+@media (width < 750px) {
+
+  .titleSlide {
+    width: 100%;
+    font-size: 5ch;
+    margin-top: 15%;
+    margin-bottom: 10%;
+  }
+  .figureSlider {
+    width: 100%;
+    height: 80ch;
+    img {
+      width: 40ch;
+      height: 40ch;
+    }
+    .imgBackground {
+      width: 40ch;
+      height: 40ch;
+      top: 40%;
+      right: 35%;
+    }
+    
+  }
+  .SectionTypeLashs {
+ 
+    &:after{
+     
+      width:20ch;
+      height: 15ch;
+      right: 10%;
+      top: -15%;
+     
+    }
+  }
+}
+@media (width < 550px) {
+  .titleSlide {
+    width: 100%;
+    font-size: 4ch;
+    margin-top: 0%;
+    margin-bottom: 10%;
+  }
+  .figureSlider {
+    width: 100%;
+    height: 50ch;
+    img {
+      width: 25ch;
+      height: 25ch;
+    }
+    &:after {
+      width: 60%;
+      border-bottom: dotted  #fff .3ch;
+      bottom: 10%;
+
+ }
+    .imgBackground {
+      width: 25ch;
+      height: 25ch;
+      top: 35%;
+      right: 30%;
+    }
+  }
+  .SectionTypeLashs {
+    h1{
+      font-size:4.5ch;
+    }
+    &:after{
+      top: -20%;
+      right: 15%;
+      height:25% ;
+    }
+  
+  }
+  
+ 
+}
+

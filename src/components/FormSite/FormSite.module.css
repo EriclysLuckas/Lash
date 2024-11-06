@@ -1,0 +1,52 @@
+.sectionForm{
+  display: flex;
+  width: 30%;
+  form{
+    width: 100%;
+  
+    input{
+      border: none;
+      width: 100%;
+      height:5ch;
+      border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.233);
+      color: #fff;
+      font-size: 2ch;
+      outline: none;
+      }
+      .inputNumber::-webkit-inner-spin-button,
+      .number-input::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+      }
+
+      .inputNumber {
+        -moz-appearance: textfield; /* Remove a aparência de número */
+    }
+    .inputTextArea{
+      span{
+        display: flex;
+      }
+      .textArea{
+        width: 100%;
+        resize: none;
+        color: #fff;
+        outline: none;
+        height: 10ch;
+        font-size: 2ch;
+        background-color: rgba(0, 0, 0, 0.233);
+        border: none;
+      }
+    }
+  }
+}
+@media (width < 800px) {
+  .sectionForm{
+    width: 100%;
+  }
+  form{
+    margin-top: 10%;
+    background-color: rgba(15, 15, 15, 0.308);
+    padding: 2%;
+  }
+}

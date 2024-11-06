@@ -1,0 +1,27 @@
+[
+  {
+    "id" : 1,
+    "titleCompare": "Cílios Russo",
+    "slCompare":"Volume intenso e efeito dramático.",
+    "descCompare":"Os cílios russos são conhecidos por seu efeito de volume, proporcionando um olhar impactante e sedutor. Com várias extensões aplicadas em cada cílio natural, eles criam uma densidade e espessura que realçam os olhos, ideal para quem busca um resultado marcante e glamouroso.",
+   
+    "img1Compare": "../../../img/TypeLash.png",
+    "img2Compare": "../../../img/volumeEgipcios.jpg"
+  },
+  {
+    "id" : 2,
+    "titleCompare": "Cílios Egípcio",
+    "slCompare":"Estilo natural e alongado.",
+    "descCompare":"Os cílios egípcios oferecem um visual mais alongado e sutil, perfeito para quem deseja um efeito mais natural. Eles são aplicados de forma que imitam o crescimento natural dos cílios, proporcionando um look elegante e refinado, ideal para o dia a dia ou ocasiões especiais.",
+    "img1Compare": "../../../img/TypeLash.png",
+    "img2Compare": "../../../img/volumeEgipcios.jpg"
+  },
+  {
+    "id" : 3,
+    "titleCompare": "Cílios Brasileiro",
+    "slCompare":"Versatilidade e conforto.",
+    "descCompare":"Os cílios brasileiros são conhecidos por sua leveza e conforto, permitindo uma aplicação que se adapta a diferentes formatos de olho. Com uma variedade de curvaturas e comprimentos, eles oferecem um resultado versátil, que pode variar de um look natural a um efeito mais ousado, dependendo da preferência.",
+    "img1Compare": "../../../img/TypeLash.png",
+    "img2Compare": "../../../img/volumeEgipcios.jpg"
+  }
+]

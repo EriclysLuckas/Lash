@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+
+@keyframes openMenu {
+0%{
+    left: -250px;
+  }
+  100%{
+    left: 0;
+  }
+}
+
+*{
+  font-family: "Quicksand", sans-serif;
+
+}
+.HeaderScrolled{
+  width: 100%;
+  height: 10ch;
+  z-index: 10;
+  position: fixed;
+  background: #151d35a8;
+  transition: top 0.3s ease, background-color 0.3s ease, padding 0.3s ease;  /* Suavizando o 'top' */
+
+}
+.HeaderLash{
+  transition: top 0.3s ease, background-color 0.3s ease, padding 0.3s ease;  
+
+  width: 100%;
+  height: 10ch;
+  z-index: 10;
+}
+.contentHeaderLash{
+  display: flex;
+  width: 100%;
+  height: 15ch;
+  position: relative;
+}
+.hambMenu{
+  display: flex;
+  width: 6%;
+  height: 100%;
+  justify-content: center;
+  margin-top: 3%;
+  position: absolute;
+  cursor: pointer;
+}
+.hambMenu svg {
+width:50%;
+height: 50%;
+z-index: 7;
+}
+.logoLash{
+  width: 100%;
+  height: 100%;
+}
+.logoLash figure{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.logoLash figure img{
+  object-fit:cover;
+  width: 15%;
+  height: 100%;
+}
+
+.menuMobile{
+  position: absolute;
+  width: 80%;
+  height: 100vh;
+  background-color: #151d35;
+  z-index: 6;
+  top: 0;
+  left: 0; 
+  padding: 25% 5%;
+  transition: left 0.5s ease; 
+}
+.menuMobileClose {
+  position: absolute;
+  width: 80%;
+  background-color: #151d35;
+  height: 100%;
+  z-index: 6;
+  top: 0;
+  left: -350px;
+  padding: 25% 5%;
+  transition: left 0.5s ease; 
+}
+.contentMenu{
+  color: #fff;
+  font-size: 3.5ch;
+  width: 100%;
+  padding-left: 5%;
+  ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1ch;
+    li{
+      width: 80%;
+      border-bottom: dotted 2px #5dd5c7;
+      a{
+        color: #fff;
+
+        text-decoration: none;
+      }
+      &:hover{
+        a{
+          color: #5dd5c7;
+
+        }
+      }
+    }
+  }
+  
+}
+@media (width > 1366) {
+
+  .logoLash figure img{
+  width: 30%;
+  }
+
+}
+@media (width < 460px) {
+  .logoLash figure{
+    width: 95%;
+  }
+  .logoLash figure img{
+  width: 50%;
+  height: 70%;
+  }
+  .hambMenu svg {
+  width: 60%;
+  }
+  .hambMenu{
+  width: 15%;
+  }
+
+  
+}
+@media (width > 900px) {
+.hambMenu{
+  display: none;
+}
+.logoLash{
+  width: 100%;
+  height: 100%;
+}
+}
+

@@ -1,0 +1,352 @@
+
+.SectionBannerHeader{
+  width: 100%;
+  height: 70ch;
+  margin-top: 10%;
+  position: relative;
+
+  &:after{
+    content: "";
+    background-image: url(../../../img/marcadagua2.png);
+    z-index: 0;
+    width:15ch;
+    height: 30ch;
+    background-size: contain; 
+    background-repeat: no-repeat;
+    position: absolute;
+    transform:rotate(100deg);
+    left: -20%;
+    top: -10%;
+    filter: blur(.4px) brightness(50%);
+    animation: loopSpace 40s linear infinite alternate-reverse ;
+
+  }
+ 
+
+ 
+}
+@keyframes loopSpace {
+  
+  0%{
+  transform: translateX(0px) rotate(0deg) scale(100%);
+
+  }
+  
+  100%{
+    transform: translateX(10px) rotate(80deg)  scale(120%);
+
+  }
+ 
+ }
+
+.titleBanner{
+  position: absolute;
+  top: 10%;
+  z-index: 5;
+  width: 68%;
+  margin-left: 4%;
+  h1{
+    width: 140%;
+    color: #5dd5c7;
+    font-size:6.5ch;
+    padding-bottom: 6px;
+    animation: titleAnimation 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+
+  }
+  
+ & p:nth-child(2){
+  width: 65%;
+    border-bottom:dotted .4ch #fff; 
+
+ }
+  p{
+    margin-top: 5px;
+    font-size: 3.7ch;
+    font-weight: 500;
+
+  }
+
+}
+@keyframes titleAnimation {
+  0% {
+    letter-spacing: .4em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+
+.titleBanner button{
+background:#5dd5c7 ;
+color: white;
+border: none;
+width: 15ch;
+font-size: 1.8ch;
+height: 3.5ch;
+border: none;
+cursor: pointer;
+position: absolute;
+ z-index: 1;
+overflow: hidden;
+    &:before{
+      content: '';
+      /* background: rgb(101, 216, 206); */
+      background: #fff;
+      
+      width: 0;
+      height: 101%;
+      position: absolute;
+      z-index: -1;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      transition: .7s ease;
+      border: none;
+  
+      }
+      &:hover{
+        color: #5dd5c7;
+        transition: .7s ease;
+        
+        &:before{
+            width:101%;
+        }
+    }
+ 
+}
+
+.BannerScreen figure{
+width: 100%;
+position: relative;
+z-index: 1;
+display: flex;
+justify-content: end;
+
+&:after{
+  content: "";
+  display: block;
+  top: 42%;
+  right: 15%;
+  filter: blur(1.5px) brightness(60%);
+  background-image: url(../../../img/ciliosBanner.jpg);
+  z-index: -1;
+  width: 95%;
+  height: 100%;
+  background-size: cover; 
+  position: absolute;
+  box-shadow: -23px 20px 30px -20px #f8f8f84b;
+}
+
+}
+.BannerScreen figure img {
+  width: 95%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(.1px);
+}
+.BannerScreen{
+  width: 45%;
+  height: 30%;
+  position: absolute;
+  top: 10%;
+  right:5%;
+}
+
+@media (width > 500px) {
+
+
+  .SectionBannerHeader{
+    width: 100%;
+    height: 80ch;
+    margin-top: 5%;
+    position: relative;
+    &:after{
+      content: "";
+      background-image: url(../../../img/marcadagua2.png);
+      z-index: 0;
+      width:35ch;
+      height: 40ch;
+      background-size: contain; 
+      background-repeat: no-repeat;
+      position: absolute;
+      transform:rotate(100deg);
+      left: -10%;
+      top: -10%;
+      filter: blur(.4px) brightness(50%);
+      animation: loopSpace 40s linear infinite alternate-reverse ;
+  
+    }
+   
+  }
+  
+  .titleBanner{
+    width: 60%;
+    margin-left: 4%;
+    top: 10%;
+    h1{
+      font-size:10ch;
+    }
+    & p:nth-child(2){
+      width: 85%;
+    
+     }
+    p{
+      font-size: 5ch;
+    }
+  
+  } 
+  
+  .titleBanner button{
+  width: 15ch;
+  font-size: 3ch;
+  height: 3.5ch;
+  bottom: -25%;
+  &:hover {
+    cursor: pointer;
+  }
+  
+  }
+  
+  .BannerScreen figure{
+  
+  &:after{
+    z-index: -1;
+    width: 40ch;
+    height: 100%;
+    top: 32%;
+    right: 25%;
+  
+  }
+  }
+  
+  .BannerScreen{
+    width: 40ch;
+    top: 10%;
+    right:5%;
+  }
+}
+@media (width > 900px) {
+  
+.SectionBannerHeader{
+  width: 100%;
+  height: 100ch;
+  margin-top: 5%;
+  position: relative;
+}
+
+.titleBanner{
+  width: 60%;
+  margin-left: 3%;
+  top: 5%;
+  h1{
+    font-size:13ch;
+  }
+
+  p{
+    font-size: 7ch;
+  }
+
+} 
+
+.titleBanner button{
+width: 15ch;
+font-size: 3ch;
+height: 3.5ch;
+bottom: -25%;
+
+
+}
+
+.BannerScreen figure{
+
+&:after{
+  z-index: -1;
+  width: 50ch;
+  height: 100%;
+  top: 10%;
+  right: 25%;
+  animation: loopBannerScreenAfter 6s linear infinite alternate-reverse;
+ 
+}
+}
+.BannerScreen figure img {
+  width: 95%;
+  height: 100%;
+  animation: loopBannerScreen 6s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse;
+
+ 
+}
+@keyframes loopBannerScreen {
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(-1ch);
+
+  }
+}
+@keyframes loopBannerScreenAfter{
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(1ch);
+
+  }
+}
+.BannerScreen{
+  width: 50ch;
+  position: absolute;
+  top: 10%;
+  right:5%;
+}}
+@media (width > 850px) {
+  .titleBanner{
+    top: 15%;
+    h1{
+      font-size:13ch;
+    }
+  
+    p{
+      font-size: 5ch;
+    }
+  
+  } 
+
+}
+@media (width > 1600px) {
+  .SectionBannerHeader{
+    width: 85%;
+  }
+  .BannerScreen figure img {
+    width: 100%;
+    height: 100%;
+   
+  }
+  .BannerScreen figure{
+    &:after{
+      z-index: -1;
+      width: 65ch;
+      height: 100%;
+      top: 10%;
+      right: 25%;
+    }    
+  }
+  .BannerScreen{
+    width: 65ch;
+    position: absolute;
+    top: 0%;
+    right: 0;
+  }
+
+  .titleBanner{
+  top:15%;
+  }
+
+
+}

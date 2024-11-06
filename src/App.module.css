@@ -1,0 +1,14 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+
+}
+
+.divApp{
+display: flex;
+flex-direction: column;
+width: 100%;
+height: auto;
+align-items: center;
+
+}

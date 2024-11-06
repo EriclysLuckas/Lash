@@ -1,0 +1,85 @@
+.sectionCareTips{
+  margin-top: 8%;
+  padding: 2%;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 3;
+  &:after{
+    content: "";
+    background-image: url(../../../img/marcadagua2.png);
+    z-index: 0;
+    width:25ch;
+    height: 35ch;
+    background-size: contain; 
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0%;
+    top: 30%;
+    filter: blur(.4px) brightness(50%);
+
+  }
+}
+.contentCareTips {
+z-index: 2;
+  h1{
+    width: 100%;
+    color: #5dd5c7;
+    font-size:8ch;
+    text-align: center;
+    padding-bottom: 6px;  }
+}
+.listCare{
+  ul{
+  font-size: 3ch;
+  margin-top: 2%;
+  width: 70%;
+  }
+  .ulListCare{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    gap: 2ch;
+  }
+  .strong{
+    color: #5dd5c7;
+    font-size: 2.3ch;
+  }
+}
+
+@media (width < 500px) {
+  .contentCareTips {
+    h1{
+      font-size:4.5ch;
+    }
+  }
+  .sectionCareTips{
+    margin-top: 8%;
+    padding: 2%;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    &:after{
+      width: 20ch;
+      top: 50%;
+      left: 50%;
+
+    }
+
+    .listCare{
+      ul{
+      width: 80%;
+      }
+  }
+  }
+}
+.imgMarcadagua{
+  position: absolute;
+  width: 25%;
+  height: 25%;
+  z-index: 1;
+  top: 50%;
+}
