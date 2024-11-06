@@ -4,20 +4,20 @@
   {
     "id": 1,
     "name": "Volume Russo",
-    "img" : "../img/ciliosBanner.jpg",
+    "img" : "https://raw.githubusercontent.com/EriclysLuckas/Lash/refs/heads/main/img/ciliosBanner.jpg",
     "min" : "../img/miniaturas/russia.png"
 
   },
   {
     "id": 2,
     "name": "Volume Brasileiro",
-    "img" : "../img/Typelash.png",
+    "img" : "https://raw.githubusercontent.com/EriclysLuckas/Lash/refs/heads/main/img/Typelash.png",
     "min" : "../img/miniaturas/brasil.png"
   },
   {
     "id": 3,
     "name": "Volume Egípcio",
-    "img" : "../img/volumeEgipcios.jpg",
+    "img" : "https://raw.githubusercontent.com/EriclysLuckas/Lash/refs/heads/main/img/volumeEgipcios.jpg",
     "min" : "../img/miniaturas/egito.png"
 
   }

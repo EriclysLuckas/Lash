@@ -16,7 +16,7 @@ export default function BannersHeader() {
       </div>
 
       <div className = {styleBannersHeader.BannerScreen}>
-      <figure> <img src="../img/ciliosBanner.jpg" alt="" /></figure>
+      <figure> <img src="https://raw.githubusercontent.com/EriclysLuckas/Lash/refs/heads/main/img/ciliosBanner.jpg" alt="" /></figure>
       </div>
     
     </section>
