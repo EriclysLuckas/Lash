@@ -108,6 +108,7 @@
   }
   .imgBackground {
     width: 55ch;
+    object-fit: cover;
     height: 55ch;
     position: absolute;
     z-index: 1; 
